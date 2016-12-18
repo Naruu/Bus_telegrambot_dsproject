@@ -35,19 +35,19 @@ def seat(j) :
 	if(j==10) :	filename='2000_1'
 	elif(j==11) : filename='2000_2'
 	else : filename=r_line[j][1]
-	save="C:\\Users\\Hye-lee\\Desktop\\project\\" + filename + '.txt'
-	x=open(save, 'a', encoding="utf-16")
+	save= 'C:\\Users\\Hye-lee\\Desktop\\project\\' + filename + '.txt'
+	x=open(save, 'a', encoding="utf-8")
 	
 	if(j<=7) :
 		key='VFNlqW0%2Bbbmd6fRfXsRI9UBvf3ZlFi7BkHlPlOCrC4%2BxQ8%2BKafexJ1XEOh%2F5pO7UycAqSl0Za0z%2FmTHOpWG7qA%3D%3D'
 	else :
 		key='SEmKkqAi1mRqIn6LSysvMM3ATeTEw5AhNMWF%2BfznsJNSPjZTiA3RPFjcVMdto5zpLR4FEM%2B%2BvnLU5AECi6dpKw%3D%3D'
 	url='http://openapi.gbis.go.kr/ws/rest/buslocationservice?serviceKey='+ key + '&routeId=' + r_line[j][0]
-	# 여기까지
+	
 	data = urlopen(url).read().decode('utf-8')
 	root=ET.fromstring(data)
-	for y in root.iter("resultCode") : resultCode=y.text
 	
+	for y in root.iter("resultCode") : resultCode=y.text
 	if(resultCode=='0') :
 		for bus in root.iter("busLocationList") :
 			if(bus.find('remainSeatCnt').text=='-1') : message.append('x')
@@ -64,17 +64,16 @@ def seat(j) :
 	sleep(1)
 	x.close()
 
-"""
+
 while(1) :
 	start=time()
-	if ('00' in datetime.now().isoformat(' ')[11:13]) : break
-	for n in range(9,16) :
+	if ('10' in datetime.now().isoformat(' ')[11:13]) : break
+	for n in range(1,16) :
 		seat(n)
 	
 	end=time()
 	delay=10*60-(end-start)
 	sleep(delay)
-"""
 
 f.close()
 g.close()
