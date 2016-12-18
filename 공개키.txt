@@ -1,17 +1,17 @@
 
-Ű
+Å°
 VFNlqW0%2Bbbmd6fRfXsRI9UBvf3ZlFi7BkHlPlOCrC4%2BxQ8%2BKafexJ1XEOh%2F5pO7UycAqSl0Za0z%2FmTHOpWG7qA%3D%3D
 
 1234567890
 
 
 
-���
+±â¹Ý
 http://openapi.gbis.go.kr/ws/rest/baseinfoservice?serviceKey=VFNlqW0%2Bbbmd6fRfXsRI9UBvf3ZlFi7BkHlPlOCrC4%2BxQ8%2BKafexJ1XEOh%2F5pO7UycAqSl0Za0z%2FmTHOpWG7qA%3D%3D
 
 
 
-��ġ
+À§Ä¡
 http://openapi.gbis.go.kr/ws/rest/buslocationservice?serviceKey=VFNlqW0%2Bbbmd6fRfXsRI9UBvf3ZlFi7BkHlPlOCrC4%2BxQ8%2BKafexJ1XEOh%2F5pO7UycAqSl0Za0z%2FmTHOpWG7qA%3D%3D&routeId=200000015
 
 
@@ -23,5 +23,8 @@ http://openapi.gbis.go.kr/ws/rest/buslocationservice?serviceKey=1234567890&route
 
 
 
-C:\Users\Hye-lee\AppData\Local\Programs\Python\Python35-32
+C:\Users\Hye-lee\AppData\Local\Programs\Python\Pytgmhon35-32
 
+gmail :
+dsprojectb
+dsprojectb2@
